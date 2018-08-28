@@ -1,0 +1,38 @@
+.authContainer{
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+.authorization{
+    flex-flow: column;
+    padding: 50px;
+   background-color: white;
+   border-radius: 5px;
+   text-align: left;
+}
+.email_form{
+    width: 100%;
+    mat-form-field{
+        width: 100%;
+    }
+}
+.username_form{
+    width: 100%;
+    mat-form-field{
+        width: 100%;
+    }
+}
+.password_form{
+    :first-child{
+        padding-right: 10px;
+    }
+    :last-child{
+        padding-left: 10px; 
+    }
+}
+.buttons_form{
+    display: flex;
+    justify-content: space-between;
+}
