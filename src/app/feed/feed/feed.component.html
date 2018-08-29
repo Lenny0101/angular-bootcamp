@@ -1,0 +1,10 @@
+<section class="feedContainer">
+    <ul>
+        <li *ngFor="let item of items">
+            <div>
+                {{item.title}}
+            </div>
+            <img src="http://localhost:3000{{item.media.path}}">
+        </li>
+    </ul>
+</section>

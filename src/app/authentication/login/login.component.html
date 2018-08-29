@@ -2,20 +2,20 @@
     <div class="authorization">
         <h1 class="authorization_title">Login</h1>
         <form class="authorization_form" [formGroup]="form" (ngSubmit)="login()">
-          <div class="email_form">
-              <mat-form-field>
-                  <input matInput placeholder="E-mail" formControlName="email">
+            <div class="email_form">
+                <mat-form-field>
+                    <input matInput placeholder="E-mail" formControlName="email">
                 </mat-form-field>
-          </div>
-          <div class="password_form">
-              <mat-form-field>
-                  <input matInput placeholder="Password" [type] = "password" formControlName="password">
+            </div>
+            <div class="password_form">
+                <mat-form-field>
+                    <input matInput placeholder="Password" [type]="password" formControlName="password">
                 </mat-form-field>
-          </div>
-          <div class="buttons_form">
-              <button mat-raised-button color type="button">Sign up</button>
-              <button mat-raised-button color="primary" type="submit">Login</button>
-          </div>
+            </div>
+            <div class="buttons_form">
+                <button mat-raised-button color type="button" routerLink="/auth/registration">Sign up</button>
+                <button mat-raised-button color="primary" type="submit">Login</button>
+            </div>
         </form>
-        </div>
+    </div>
 </div>
