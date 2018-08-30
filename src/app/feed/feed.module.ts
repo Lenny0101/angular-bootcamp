@@ -3,12 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { FeedRoutingModule } from './feed-routing.module';
 import { FeedComponent } from './feed/feed.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FeedRoutingModule
   ],
-  declarations: [FeedComponent]
+  declarations: [FeedComponent, PostComponent]
 })
 export class FeedModule { }

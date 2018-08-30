@@ -1,0 +1,50 @@
+<section class="feedContainer">
+  <ul>
+    <li class="postLi">
+      <div class="postCard">
+        <div class="postHeader">
+          <div class="profileImage">
+            <img src="https://instagram.frix6-1.fna.fbcdn.net/vp/3d5b6f1f588fd00641caa1fe459da3cd/5BF4052D/t51.2885-19/s150x150/37644790_2143853165883274_3937035239926267904_n.jpg"
+                 alt=""/>
+          </div>
+          <div class="profileInfo">
+            <p class="profileUsername"> {{item.username}}</p>
+            <p class="profileLocation">Riga, Latvia</p>
+          </div>
+        </div>
+        <div class="postImage">
+          <img src="http://localhost:3000{{item.media.path}}" alt=""/>
+        </div>
+        <div class="postContent">
+          <div class="postIcons">
+            <i class="far fa-heart fa-2x"></i>
+            <i class="icon far fa-comment fa-2x icon-flipped"></i>
+            <a routerLink="/feed">Go back</a>
+            <i class="far fa-bookmark fa-2x allign-right"></i>
+          </div>
+          <div class="postLikes">
+            <p>47 likes</p>
+          </div>
+          <div class="postCaption">
+            <p class="profileUsername">{{item.username}}</p>
+            <p class="captionText">
+              {{item.title}} <a href="#!">#hashtag</a>
+            </p>
+          </div>
+          <div class="postDateTime">
+            <p>{{item.createdAt | date}}</p>
+          </div>
+          <div class="postComments">
+            <div class="addComment">
+              <textarea placeholder="Add a comment…" autocomplete="off"></textarea>
+            </div>
+            <div class="commentButton">
+              <i class="fas fa-ellipsis-h">
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
