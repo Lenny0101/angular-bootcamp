@@ -3,6 +3,7 @@ import {FeedService} from "../../services/feed.service";
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {MatDialogRef} from "@angular/material";
 import {Router} from "@angular/router";
+import {FeedComponent} from "../../../feed/feed/feed.component";
 
 @Component({
     selector: 'bc-add-post',
