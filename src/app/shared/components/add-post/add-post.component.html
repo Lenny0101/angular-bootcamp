@@ -11,13 +11,9 @@
                        type="text"
                 />
             </div>
-            <input type="file" (change)="handleAddImg($event)"/>
+            <input ng-model="imageInput" type="file" (change)="handleAddImg($event)"/>
         </form>
-        <!--{imageUrl ? (-->
-        <!--<div class="previewImage">-->
-        <!--<img src='' alt="" />-->
-        <!--</div>-->
-        <!--) : null}-->
+        <img class="imgPost" [src]="'http://localhost:3000' + imageUrl" *ngIf= imageUrl>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-secondary" (click)="dialogRef.close(false)">

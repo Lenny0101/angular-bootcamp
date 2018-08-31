@@ -13,6 +13,7 @@ import {FeedComponent} from "../../../feed/feed/feed.component";
 export class AddPostComponent implements OnInit {
     form: FormGroup;
     contentID: string;
+    imageUrl: string;
 
     constructor(private feedService: FeedService,
                 private fb: FormBuilder,
@@ -24,7 +25,7 @@ export class AddPostComponent implements OnInit {
     addPost() {
         this.feedService.addPost({
             caption: this.form.controls.caption.value,
-            contentId: this.contentID
+            contentId: this.contentID,
         }).subscribe(
             (response: any) => {
                 this.dialogRef.close();
@@ -44,6 +45,7 @@ export class AddPostComponent implements OnInit {
             this.feedService.postImg( formData ).subscribe(
                 (response) => {
                     this.contentID = response.payload.contentId;
+                    this.imageUrl = response.payload.path;
                 }
             );
         };

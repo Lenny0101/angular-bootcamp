@@ -1,4 +1,4 @@
 export class AddPost{
-  url: string;
+  path: string;
   contentId: string;
 }
