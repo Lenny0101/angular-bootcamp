@@ -3,11 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  postRegistrationUrl: "http://localhost:3000/api/v1/auth/users", // + payload
-  postLoginUrl: "http://localhost:3000/api/v1/auth/session",
-  getUserUrl: "http://localhost:3000/api/v1/users/self",
-  getFeedUrl: "http://localhost:3000/api/v1/media/",
+    production: false,
+    postRegistrationUrl: "http://localhost:3000/api/v1/auth/users", // + payload
+    postLoginUrl: "http://localhost:3000/api/v1/auth/session",
+    getUserUrl: "http://localhost:3000/api/v1/users/self",
+    getFeedUrl: "http://localhost:3000/api/v1/media/",
 };
 
 /*

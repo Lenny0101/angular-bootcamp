@@ -1,11 +1,15 @@
 <div class="headerContainer">
     <div class="headerImage">
-        <img src="../../../../assets/images/Lenny-designstyle-colors-m.png">
+        <img src="../../../../assets/images/inst_logo.png">
+        <img src="../../../../assets/images/inst_text.png">
     </div>
     <div class="userInfo">
         <div class="user_name" *ngIf="user">Welcome, {{user?.username}}!</div>
     </div>
     <div class="headerButtons">
+        <button mat-raised-button color type="button" class="createPostButton" color="primary" *ngIf="user"
+                (click)="createPost()">Create Post
+        </button>
         <button mat-raised-button color type="button" class="logoutButton" color="primary" *ngIf="user"
                 (click)="logout()">Log Out
         </button>

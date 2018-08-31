@@ -24,4 +24,11 @@ export class FeedService {
             );
     };
 
+    getPostById(id): Observable<Response<FeedItem>> {
+        return this.http.get<Response<FeedItem>>(environment.getFeedUrl+'/'+id)
+            .pipe(
+                catchError(this.helpersService.handleError('getPostById'))
+            )
+    }
+
 }

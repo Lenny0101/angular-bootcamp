@@ -13,10 +13,19 @@
 }
 
 .headerImage {
+  display: flex;
+  align-items: center;
   height: 60px;
-  img {
-    height: 60px;
+  img{
+    height: 40px;
     width: auto;
+  }
+  :first-child{
+    padding-right: 5px;
+    border-right: 1px solid black;
+  }
+  :last-child{
+    padding-left: 5px;
   }
 }
 
